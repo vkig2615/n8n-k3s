@@ -7,9 +7,8 @@ spec:
   type: NodePort
   ports:
     - port: 80
-      nodePort: 5678
+      nodePort: 30678  # ✅ VALID RANGE
       protocol: TCP
       name: http
   selector:
     app.kubernetes.io/name: ingress-nginx
-
